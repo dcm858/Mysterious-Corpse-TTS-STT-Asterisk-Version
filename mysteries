@@ -1,0 +1,288 @@
+--- 
+- intro: The debriefing took ten days in a sealed-off suite in the old section of the Army's Letterman general Hospital on the Presidio in San Francisco and when that was finished, so was my career--if it could be called that.
+  xorder: 1
+  author: Ross Thomas
+  protagonist: male
+  title: The Fools in Town Are On Our Side
+  id: 1
+  subgenre: satirical
+  setting: US
+- intro: Beyond the garage were some decorative trees trimmed as carefully as poodle dogs.
+  xorder: 1
+  author: Raymond Chandler
+  protagonist: male
+  title: The Big Sleep
+  id: 2
+  subgenre: noir
+  setting: US
+- intro: Then like all dreamers, I was possessed of a sudden supernatural powers and passed like a spirit through the barrier before me.
+  xorder: 2
+  author: Daphne Du Maurier
+  protagonist: female
+  title: Rebecca
+  id: 3
+  subgenre: gothic
+  setting: non-US
+- intro: The sky was gunmetal gray and the air sat dead cold on cars and sidewalks.
+  xorder: 2
+  author: Janet Evanovich
+  protagonist: female
+  title: Three to Get Deadly
+  id: 4
+  subgenre: whodunit
+  setting: US
+- intro: The leaves on the trees were golden in the evening light.
+  xorder: 1
+  author: Agatha Christie
+  protagonist: male
+  title: Crooked House
+  id: 5
+  subgenre: whodunit
+  setting: non-US
+- intro: Maybe she could get Vita-Might's commercial landlord to foot the bill for her prep work, not to mention the seven-plus hours round-trip travel time for driving all the way up to northern Pennsylvania to argue the motion.
+  xorder: 1
+  author: Melissa Miller
+  protagonist: female
+  title: Inadvertent Disclosure
+  id: 6
+  subgenre: legal
+  setting: US
+- intro: Like a gleaming pelt, mats of red, blue, orange strips covered the mesh. Plastic chafing hair designed to ease the net's way over the rocks of the sea bottom.
+  xorder: 2
+  author: Martin Cruz Smith
+  protagonist: male
+  title: Polar Star
+  id: 7
+  subgenre: political
+  setting: non-US
+- intro: Most of the people living here seemed to have fallen into the hole, and for the first time in their lives seem to sense that the sun can be a violent planet.
+  xorder: 1
+  author: Pieke Biermann
+  protagonist: male
+  title: Violetta
+  id: 8
+  subgenre: noir
+  setting: non-US
+- intro: And even though I knew it couldn't be true, I thought I caught a whiff of putrid flesh from under the rubble across the street.
+  xorder: 2
+  author: Walter Mosely
+  protagonist: male
+  title: Little Scarlet
+  id: 9
+  subgenre: noir
+  setting: US
+- intro: When I first set eyes on Evelyn Barton-Forbes she was walking the streets of Rome----(I am informed, by the self-appointed Critic who reads over my shoulder as I write, that I have already committed an error. If those seemingly simple English words do indeed imply that which I am told they imply to the vulgar, I must in justice to Evelyn find other phrasing.)
+  xorder: 1
+  author: Elizabeth Peters
+  protagonist: female
+  title: Crocodiles on the Sandbank
+  id: 10
+  subgenre: satirical
+  setting: non-US
+- intro: Five days ago I stepped off an American Airlines plane into blinding Los Angeles sunshine.  It was a hot July afternoon, the air still and close.
+  xorder: 1
+  author: Ed Ifkovic
+  protagonist: female
+  title: Make Believe  An Edna Ferber Mystery
+  id: 11
+  subgenre: noir
+  setting: US
+- intro: You know who hates too much, you even mostly know who it is they hate.  So it didn't immediately strike me as surprising that someone had buried a knife between Simon Rafer's shoulder blades.
+  xorder: 1
+  author: Charles Rosenberg
+  protagonist: male
+  title: Death on a High Floor
+  id: 12
+  subgenre: legal
+  setting: US
+- intro: On the evening of Saturday, January 4th, a young man who intended to get married went to a house in Grosvenor Street to meet his future father-in-law.
+  xorder: 1
+  author: Carter Dickson
+  protagonist: male
+  title: The Judas window
+  id: 13
+  subgenre: whodunit
+  setting: non-US
+- intro: To arrive here at all was a victory of exasperation over comfort.
+  xorder: 1
+  author: Lillian Stewart Carl
+  protagonist: female
+  title: Ashes to Ashes
+  id: 14
+  subgenre: romantic
+  setting: non-US
+- intro: First, there'd been the four years he'd languished in Singapore, dripping with in the humid heat of its streets, freezing his balls off in its bars and restaurants, not to mention the dire boredom he'd endured while rubbing shoulders with cohorts of business executives, doctors bingeing at lavish congresses and swarms of students of English.
+  author: Teresa Solana
+  protagonist: male
+  title: The Sound of One Hand Killing
+  id: 15
+  subgenre: satirical
+  setting: non-US
+- intro: "It was hard to believe, but clearly he'd already had a drink.  Normally a couple of stops away from being monosyllabic(which I prefer being a shade taciturn myself) booze always made Bruno chattier than an Italian waiter.  "
+  author: Philip Kerr
+  protagonist: male
+  title: The Pale Criminal
+  id: 16
+  subgenre: noir
+  setting: non-US
+- intro: She avoided a karate chop from a gesticulating long-haired journalist in black leather pants attempting to drive home a point. His audience was composed of a tele-exec, a sweater knotted around his shoulders, and a rail-thin model in a belted t-shirt passing for a minidress.  Just.
+  author: Cara Black
+  protagonist: female
+  title: Murder in the Rue de Paradis
+  id: 18
+  subgenre: political
+  setting: non-US
+- intro: He said, indifferently, "If Irving Berlin's right, your life is one long sweet song.  How many prettiest girls do you run into of a day?  About that hydrocyanic--if it's there, why the five stab wounds?"
+  author: Helen Reilly
+  protagonist: male
+  title: The Dead Can Tell
+  id: 22
+  subgenre: whodunit
+  setting: US
+- intro: "He was as yet alone on this corridor, which somehow conveyed the impression that, as hotel corridors mysteriously do, even without the testimony of dark, closed transoms, and a minimum of light.  "
+  author: Elizabeth Daly
+  protagonist: male
+  title: Unexpected Night
+  id: 23
+  subgenre: whodunit
+  setting: US
+- intro: It was the hand-to-hand struggle with the insistent personalities of other people, all pushing for a place in the limelight that made the accidents of one's own personal adventure bulk so large in the scheme of things.
+  author: Dorothy Sayers
+  protagonist: female
+  title: Gaudy Night
+  id: 24
+  subgenre: satirical
+  setting: non-US
+- intro: "There must, she supposed, have been one measurable second in time in which he ceased to be Bernie and had become this unimportant but embarassingly unwieldy weight of flesh and bone. How odd that a moment of time so important to him should pass without his knowledge. "
+  author: P.D. James
+  protagonist: female
+  title: An Unsuitable Job for a Woman
+  id: 25
+  subgenre: whodunit
+  setting: non-US
+- intro: No matter how good the cases, they were never good enough for him.  He always smiled that smile right before he tore into me, in the true Socratic tradition, asking me question after question, until he had proven, as a matter of logic, that I was taking up too much space in the universe.
+  author: Lisa Scottoline
+  protagonist: female
+  title: Everywhere That Mary Went
+  id: 26
+  subgenre: legal
+  setting: US
+- intro: "The ordinary trial clientele--the scared, the disconcerted, the regulars--are on the public benches.  On the defense benches, people in black robes, some with ermine trim and some without, are preparing to represent their clients. "
+  author: Sylvie Granotier
+  protagonist: female
+  title: The Paris Lawyer
+  id: 27
+  subgenre: legal
+  setting: non-US
+- intro: "She had been so keen to clear the night's thoughts out of her head that she had poured boiling water over the granules and taken a great slurp, without even bothering to stir the bitty liquid.  But she had burned herself for nothing-memories of the cases she had been working on were still there, as vivid and unbearable as ever. "
+  author: Natasha Cooper
+  protagonist: female
+  title: Creeping Ivy
+  id: 28
+  subgenre: legal
+  setting: non-US
+- intro: We in the criminal bar were incapable of the insouciance that seems to be issued with platinum credit cards and corner offices.  We tended to be solitary creatures, easily identifiable by our bulging files, tattered briefcases, hair in need of cutting, suits in need of pressing, and attitudes of weary cynicism.
+  author: Michael Nava
+  protagonist: male
+  title: Rag and Bone
+  id: 29
+  subgenre: legal
+  setting: US
+- intro: I remembered myself sitting in an interview room under the Old Bailey, looking into the terrified eyes of a young man who had realized that the great engine of the criminal law was intent on driving him towards a grim execution shed and ceremoniously breaking his neck.
+  author: John Mortimer
+  protagonist: male
+  title: Rumpole and the Penge Bungalow Murders
+  id: 30
+  subgenre: legal
+  setting: non-US
+- intro: "Whenever he walked in the line of vision of the closed circuit television cameras that scanned the city, he was conscious of a prickling sensation at the back of his neck.  The awareness of being under constant observation was enough to induce a sense of guilt in anyone; except, perhaps, Harry's thicker-skinned clients. "
+  author: Martin Edwards
+  protagonist: male
+  title: Eve of Destruction
+  id: 31
+  subgenre: legal
+  setting: non-US
+- intro: The providence-state savors its idleness with as much detachment as its decision-makers.  From dawn till dusk, the common folk move idly from here to there, picking their noses and staring into space.
+  author: Yasmina Khadra
+  protagonist: male
+  title: Dead Man's Share
+  id: 32
+  subgenre: political
+  setting: non-US
+- intro: "\"High jingo.\" \"What's that?\" \"That's the confluence of police and politics.  We are investigating the death of Councilman Irvin Irving's son.  You know about Irving, right?\" "
+  author: The Drop
+  protagonist: male
+  title: Michael Connelly
+  id: 33
+  subgenre: political
+  setting: US
+- intro: "The red card was the one I wanted.  It identified me as Henry F. Neill, A.B. seaman, member in good standing of the International Workers of the World.  There wasn't a word of truth in it. "
+  author: Dashiell Hammett
+  protagonist: male
+  title: Red Harvest
+  id: 34
+  subgenre: political
+  setting: US
+- intro: I pondered my knotty situation, flip-flopping like a political hack.  A debt-ridden Californian, I lived alone in the tight heart of New England, a life that lacked the simplicity only money, or love, can deliver.
+  author: Angela Gerst
+  protagonist: female
+  title: A Crack in Everything
+  id: 35
+  subgenre: political
+  setting: US
+- intro: Later, the things I would think about.  Things like this--My brother never wore hats.
+  author: Megan Abbott
+  protagonist: female
+  title: Die a Little
+  id: 36
+  subgenre: noir
+  setting: US
+- intro: "You might say that I had too much time on my hands. Time for those luxuries of the human heart--hatred, dread and grief--and a life so empty there was virtually nothing that had to be moved out of the way when they entered to inhabit it. "
+  author: Charlotte Jay
+  protagonist: female
+  title: A Hank of Hair
+  id: 37
+  subgenre: noir
+  setting: non-US
+- intro: "But this was different, this feeling of aimlessness. As she always did at this moment, she lit a cigarette, but tonight she realized for the first time that she did it to cover the smell of the factory. "
+  setti8g: non-US
+  author: Natsuo Kirino
+  protagonist: female
+  title: "Out:  A Novel"
+  id: 38
+  subgenre: noir
+- intro: Travel broadens, they say.  My own experience is that it flattens, aiming its steamroller of deadlines and details straight at one's daily life, leaving a person flat and gasping at its passage.
+  author: Laurie R. King
+  protagonist: female
+  title: The Game
+  id: 39
+  subgenre: political
+  setting: non-US
+- intro: She's sitting in the fuselage, trussed up like a piece of baggage, battered by noise.
+  author: Simon Mawer
+  protagonist: female
+  title: Trapeze
+  id: 40
+  subgenre: political
+  setting: non-US
+- intro: I stopped walking, turned to look back at my booth and said, "Lady, I see a dead man in a puddle of bloody goo. I stepped in it.  What more do you need to know?"
+  author: Diane Morlan
+  protagonist: female
+  title: Too Dead to Dance
+  id: 42
+  subgenre: satirical
+  setting: US
+- intro: Some say it was after he returned from New Orleans that he abandoned the rarified world of ideals and put his roots to Business; gave up being a short-order cook and handyman and became instead the head of a thriving "Gumbo" business--Solid Gumbo Works.
+  author: Ishmael Reed
+  protagonist: male
+  title: The Last Days of Louisiana Red
+  id: 43
+  subgenre: satirical
+  setting: US
+- intro: To a rousing burst of Rachmaninoff, he swept into my London flat one evening, and, with the hauteur of his greeting, captured my virgin heart forever and a day.
+  author: Dorothy Cannell
+  protagonist: female
+  title: Femmes Fatale
+  id: 44
+  subgenre: satirical
+  setting: non-US

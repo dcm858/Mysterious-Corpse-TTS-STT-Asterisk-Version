@@ -1,0 +1,218 @@
+[dm1346]
+exten => s,1,Wait(1)
+exten => s,n,agi(googletts.agi,"The Mysterious Corpse welcomes you. Say hello and press the pound key to begin",en)
+exten => s,n,(record),agi(speech-recog.agi,en-US)
+exten => s,n,agi(googletts.agi,"Listen to the four mystery genre options, and at the end of the list, state your choice: Legal, Whodunit, Satirical, or Political",en)
+exten => s,n(record),agi(speech-recog.agi,en-US)
+exten => s,n,Set(GENRE=${utterance})
+exten => s,n,agi(googletts.agi,"Setting is US or non-US?",en)
+exten => s,n(record),agi(speech-recog.agi,en-US)
+exten => s,n,Set(SETTING=${utterance})
+exten => s,n,agi(googletts.agi,"Female or Male protagonist?",en)
+exten => s,n(record),agi(speech-recog.agi,en-US)
+exten => s,n,Set(PROTAGONIST=${utterance})
+exten => s,n,Set(mysterytext=${SHELL(/home/dm1346/mystery.rb ${GENRE} ${SETTING} ${PROTAGONIST})}) 
+exten => s,n,Set(mysterytext=${SHELL(print sentence.intro)}) 
+exten => s,n,agi(googletts.agi,"${mysterytext}",en)
+exten => s,n,Hangup()
+
+
+
+exten => s,n,agi(googletts.agi,"Listen to the four mystery genre options, and at the end of the list, state your choice: Legal, Noir, Satirical, or Political",en)
+
+
+
+
+[dm1346xxx]
+exten => s,1,Answer()
+exten => s,n,Set(numfiles=${SHELL(ls -l /home/dm1346 | wc -l)})
+exten => s,n,SayDigits(${numfiles})
+exten => s,n,Hangup()
+ exten => s,n,agi(googletts.agi,"Using ${GENRE} ${SETTING} ${PROTAG}",en)
+;;exten => s,n,agi(googletts.agi,"The probability to be right is:${confidence}",en)
+ exten => s,n,Set(TEXT=${SHELL(/usr/bin/ruby /home/dm1346/mystery.rb ${GENRE} ${SETTING} ${PROTAGONIST})}) 
+exten => s,n(record),agi(speech-recog.agi,en-US)
+
+exten => s,n agi(googletts.agi,"You chose Legal, US and Female",en)
+
+ exten => s,n,agi(googletts.agi,"You chose Noir,US and Female",en)
+ 
+  exten => s,n,agi(googletts.agi,"You chose Satirical,US and Female",en)
+  
+   exten => s,n,agi(googletts.agi,"You chose Political mystery,US and Female",en)
+   
+    exten => s,n,agi(googletts.agi,"You chose  Legal,US and Male",en)
+    
+     exten => s,n,agi(googletts.agi,"You chose  Noir,US and Male",en)
+     
+      exten => s,n,agi(googletts.agi,"You chose  Satirical,US and Male",en)
+      
+       exten => s,n,agi(googletts.agi,"You chose  Political,US and Male",en)
+       
+        exten => s,n,agi(googletts.agi,"You chose  Legal,non-US and Female",en)
+        
+         exten => s,n,agi(googletts.agi,"You chose  Noir,non-US and Female",en)
+         
+          exten => s,n,agi(googletts.agi,"You chose  Satirical,non-US and Female",en)
+          
+           exten => s,n,agi(googletts.agi,"You chose  Political,non-US and Female",en)
+           
+            exten => s,n,agi(googletts.agi,"You chose  Legal,non-US and Male",en)
+            
+            exten => s,n,agi(googletts.agi,"You chose  Noir,non-US and Male",en)
+            
+            exten => s,n,agi(googletts.agi,"You chose  Satirical,non-US and Male",en)
+            `
+            exten => s,n,agi(googletts.agi,"You chose  Political,non-US and Male",en)
+ 
+ 
+ 
+
+
+
+
+
+[dm1346]
+ exten => s,1,Wait(1)
+ exten => s,n,agi(googletts.agi,"Say something in English, and when you are done, press the pound key.",en)
+ exten => s,n(record),agi(speech-recog.agi,en-US)
+ exten => s,n,agi(googletts.agi,"The text you just said is:${utterance}",en)
+ exten => s,n,agi(googletts.agi,"The probability to be right is:${confidence}",en)
+ exten => s,n,Hangup()
+ 
+ 
+
+
+
+
+
+
+
+
+[dm1346_test1]
+exten => s,1,Answer()
+exten => s,n,agi(googletts.agi,"Say something in English, when done press the pound key.",en)
+exten => s,n(record),agi(speech-recog.agi,en-US)
+exten => s,n,Verbose(1,Script returned: ${status},${id} , ${confidence}, ${utterance}
+exten => s,n,GotoIf($["${status}" = "0"]?success:fail)
+exten => s,n(success),GotoIf($["${confidence}" > "0.8"]?Playback:retry)
+exten => s,1((/home/dm1346)),agi(googletts.agi,"The text you just said was...",en)
+exten => s,n,agi(googletts.agi,"${utterance}",en)
+exten => s,n,goto(end)
+exten => s,n(retry),agi(googletts.agi,"Can you please repeat more clearly?",en)
+exten => s,n,goto(record)
+exten => n(fail),agi(googletts.agi,"Failed to get speech data.",en)
+exten => s,n(end),Hangup()
+
+
+
+
+
+
+[dm1346-test1]
+exten => s,1,Answer()
+exten => s,n,agi(speech-recog.agi,en-US)
+exten => s,n,Verbose(1,The text you just said is: ${utterance})
+exten => s,n,Verbose(1,The probability to be right is: ${confidence})
+exten => s,n,Hangup()
+
+
+
+
+
+exten => s,1,Playback(/home/dm1346/)
+exten => s,2,AGI(googletts.agi,"
+exten => s,n,AGI(googlena, 
+exten => s,n,AGI(googletts.agi," 
+exten => s,n,AGI(googletts.agi,"
+exten => s,n,AGI(googletts.agi
+exten => s,n,Playback(/home/dm1346/asterisk_sounds/)
+exten => s,n,Wait(1)
+
+
+
+
+
+1-917-534-6464
+exten => s,n,Wait(1) 
+
+
+
+
+[dm1346_iax]
+exten => _X,1,GoTo(dm1346_iax_answer,s,1)
+
+[dm1346_iax_answer]
+exten => s,1,Playback(kittens)
+		same => n,Playback(auth-thankyou)
+		same => n,Hangup()
+		
+[dm1346_sip]
+exten => s,1,Goto(dm1346_sip,1,1);
+exten => _X,1,Answer();
+exten => _X,n,Goto(itp-redial,s,1);
+
+
+
+
+
+
+
+
+
+
+
+
+[dm1346_easy_voicemail]
+exten => s,1,Voicemail(15@voicemail_dm1346)
+exten => s,n,Goto(dm1346,s,1)
+
+
+
+[dm1346]
+exten => s,1,Wait(1)
+exten => s,n,SayDigits(${CALLERID(num)})
+exten => s,n,Playback(demo-echotest)
+exten => s,n,Echo()
+exten => s,n,Playback(demo-echodone)
+exten => s,n,Hangup()
+
+
+
+
+
+[dm1346]
+exten => s,n,AGI(googletts.agi,"",en)
+exten => s,n,Wait(1)
+
+
+[dm1346_playtones]
+exten => s,1,Playback(hello-world)
+exten => s,2,Playtones(330/400,0/20,294/400,0/20,262/400,0/20,294/400,0/20,330/400,0/20,330/400,0/20,330/400,0/20,330/400,0/20,294/400,0/20,294/400,0/20,330/400,0/20,294/400,0/20,262/1000,0/2000)
+exten => s,n,Wait(20)
+exten => s,n,StopPlaytones()
+
+[new]
+exten => s,1,Playback(hello-world)
+exten => s,n,Wait(10)
+
+[dm_newest]
+; --- Google TTS service
+exten => s,1,AGI(googletts.agi,"This is a simple google text to speech test in english.",en)
+exten => s,n,Wait(1)
+
+[dm_sip]
+exten => s,1,Goto(dm1346_sip,1,1);
+exten => _X,1,Answer();
+exten => _X,n,Goto(itp-redial,s,1);
+
+
+[dm1346-first ver]
+exten => s,1,Playback(/home/dm1346/asterisk_sounds/newBab)
+exten => s,2,AGI(googletts.agi,"Nestor, the Lion cub born at Belgium’s Antwerp Zoo on August 29, loves to play.  His favorite toy?  Mom!",en)
+exten => s,n,AGI(googletts.agi,"Keep listening to hear about a one-day old Mouse Deer, to meet Beau, the orphaned echidna, and his new spikes, and to learn about two new twin baby polar bears in Toledo.",en)
+exten => s,n,AGI(googletts.agi,"Last week, Zoo Zurich welcomed one of the world's smallest hoofed animals into the world. Mouse Deer, also known as Chevrotains, are neither mouse nor deer. Nine of the 10 extant Mouse Deer species are found in South and Southeast Asia, with one other species inhabiting Central and West Africa. The French word Chevrotain can be translated as 'little goat'.",en)
+exten => s,n,AGI(googletts.agi,"Upon arriving at the zoo in October, Beau was about a month old and nearly hairless.  About a month later, you could see fine hairs beginning to sprout.  Now, Beau is growing the coat of protective spikes typical of adult Echidnas.Press 3 to hear the next story.",en)
+exten => s,n,AGI(googletts.agi,Twin Polar Bear cubs were born at the Toledo Zoo on November 21, but they’ve been behind the scenes with their mother Crystal until last week, when they stepped outdoors for a sneak peek. The cubs, who have not yet been named, are not expected to go into their exhibit until sometime in May.",en)
+exten => s,n,Playback(/home/dm1346/asterisk_sounds/newBab)
+exten => s,n,Wait(1) 
